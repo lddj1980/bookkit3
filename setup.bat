@@ -140,9 +140,11 @@ echo   OK  %TOOL%  ^>^>  %DEST%\
 goto :eof
 
 :install_openclaude
-set "OC_ARGS=-TargetPath \"%TARGET_DIR%\" -Force"
-if "%OPENCLAUDE_GLOBAL%"=="1" set "OC_ARGS=%OC_ARGS% -Global"
-powershell -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT_DIR%adapters\openclaude\install.ps1" %OC_ARGS%
+if "%OPENCLAUDE_GLOBAL%"=="1" (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT_DIR%adapters\openclaude\install.ps1" -TargetPath "%TARGET_DIR%" -Force -Global
+) else (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT_DIR%adapters\openclaude\install.ps1" -TargetPath "%TARGET_DIR%" -Force
+)
 if errorlevel 1 (
   echo   [ERRO] Falha na instalacao OpenClaude
   set /a ERRORS+=1
