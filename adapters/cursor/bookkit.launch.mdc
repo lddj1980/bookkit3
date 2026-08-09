@@ -1,0 +1,161 @@
+---
+description: "Book Kit · bookkit.launch — Plano de Lançamento"
+globs:
+alwaysApply: false
+---
+
+Você é um estrategista de lançamento editorial com experiência em autopublicação e publicação tradicional.
+
+Crie o plano completo de lançamento — da pré-venda ao pós-lançamento — adaptado ao track de distribuição do livro.
+
+## Contexto
+
+o conteúdo colado na mensagem
+
+
+## Instrução de escrita
+
+1. Crie a pasta `bookkit/` na raiz do projeto se ainda não existir
+2. Crie o arquivo `bookkit/LAUNCH.md` com o conteúdo gerado abaixo
+3. Se o arquivo já existir, sobrescreva com a versão atualizada
+4. Após criar o arquivo, confirme o caminho e o número de linhas escritas
+
+> **Não exiba apenas o conteúdo no chat — escreva o arquivo em disco.**
+
+## Estrutura do arquivo `bookkit/LAUNCH.md`
+
+
+```markdown
+---
+based_on: METADATA.md + ADS.md + BLURB.md + PERSONA.md
+date: {DATA}
+track: {autopublicação / tradicional / ambos}
+---
+
+# LAUNCH.md — Plano de Lançamento
+
+---
+
+## Resumo do Lançamento
+- **Data de lançamento:** {DATA}
+- **Track:** {autopublicação / tradicional / ambos}
+- **Meta de vendas — 30 dias:** {N unidades / {valor}}
+- **Meta de avaliações — 30 dias:** {N reviews}
+- **Orçamento de marketing:** R$ {N} / US$ {N}
+
+---
+
+## Cronograma
+
+### 90 dias antes — Pré-lançamento
+
+| Semana | Ação | Responsável | Status |
+|--------|------|-------------|--------|
+| -13 | Definir data de lançamento | Autor | ⬜ |
+| -12 | Finalizar capa e interior para revisão | Designer | ⬜ |
+| -11 | Enviar para beta readers / revisão técnica | Autor | ⬜ |
+| -10 | Configurar pré-venda na Amazon (se auto) | Autor | ⬜ |
+| -9 | Montar ARC team (Advanced Reader Copies) | Autor | ⬜ |
+| -8 | Enviar ARCs para o ARC team | Autor | ⬜ |
+| -7 | Criar landing page / página do livro | Autor | ⬜ |
+| -6 | Iniciar sequência de e-mails de aquecimento | Autor | ⬜ |
+| -5 | Gravar conteúdo de redes sociais (batch) | Autor | ⬜ |
+| -4 | Confirmar reviews do ARC team | Autor | ⬜ |
+| -3 | Configurar Amazon Ads (pausado) | Autor | ⬜ |
+| -2 | Briefing para assessoria de imprensa (se houver) | Assessor | ⬜ |
+| -1 | Revisão final de todos os materiais | Autor | ⬜ |
+
+### Semana de lançamento
+
+| Dia | Ação | Canal | Métrica |
+|-----|------|-------|---------|
+| D-2 | Último e-mail de aquecimento | E-mail | abertura |
+| D-1 | Post de contagem regressiva | Redes | alcance |
+| D0 | E-mail de lançamento | E-mail | CTR |
+| D0 | Amazon Ads — ativar | Amazon | impressões |
+| D0 | Post de lançamento | Redes | engajamento |
+| D+1 | Verificar ranking e ajustar orçamento | Amazon | rank |
+| D+2 | Agradecer primeiras avaliações publicamente | Redes | — |
+| D+3 | E-mail follow-up para não-compradores | E-mail | conversão |
+| D+5 | E-mail para não-abridores | E-mail | abertura |
+| D+7 | Revisão de dados — otimizar ou pivotar | Todos | vendas |
+
+### 30-90 dias após — Sustentação
+
+| Ação | Frequência | Objetivo |
+|------|-----------|---------|
+| Otimizar keywords Amazon Ads | Semanal | Reduzir ACoS |
+| Publicar conteúdo relacionado ao tema | 2-3x/semana | Descoberta orgânica |
+| Pedir reviews para compradores verificados | Quinzenal | Social proof |
+| Atualizar categories/keywords se necessário | Mensal | Visibilidade |
+| Analisar dados de vendas e ajustar preço | Mensal | Margem |
+
+---
+
+## Estratégia de Avaliações
+
+### ARC Team
+- **Meta:** {N} leitores beta comprometidos a deixar review no lançamento
+- **Como recrutar:** {lista de e-mail / comunidade / redes sociais}
+- **O que enviar:** PDF/EPUB + data limite + instruções de onde avaliar
+- **Acompanhamento:** lembrete D-3 e D-1 antes da data
+
+### Avaliações Orgânicas
+- Inserir pedido de review ao final do livro (página de encerramento)
+- E-mail de follow-up 14 dias após a compra (se tiver lista)
+- Responder todas as reviews nos primeiros 30 dias
+
+---
+
+## Estratégia de Preço no Lançamento
+
+| Período | Preço eBook | Estratégia |
+|---------|------------|-----------|
+| Pré-venda (-90 a D0) | R$ {N} (reduzido) | Incentivo de entrada |
+| Lançamento (D0 a D+7) | R$ {N} (lançamento) | Criar momentum de ranking |
+| Pós-lançamento | R$ {N} (normal) | Preço de catálogo |
+| Promoções futuras | R$ {N} (promo) | Reativar / novo público |
+
+---
+
+## KPIs de Sucesso
+
+| Métrica | Meta 7 dias | Meta 30 dias | Meta 90 dias |
+|---------|------------|-------------|--------------|
+| Unidades vendidas | {N} | {N} | {N} |
+| Reviews | {N} | {N} | {N} |
+| Ranking Amazon (categoria) | Top {N} | Top {N} | Top {N} |
+| ACoS Amazon Ads | < {N}% | < {N}% | < {N}% |
+| E-mails capturados | {N} | {N} | {N} |
+
+---
+
+## Plano de Contingência
+| Se | Então |
+|----|-------|
+| Vendas < {N} em 7 dias | Revisar blurb / ajustar preço / aumentar orçamento ads |
+| ACoS > {N}% | Pausar broad match / focar em exact match |
+| Reviews negativas sobre {tema} | {resposta planejada} |
+| Editora solicita ajustes (track tradicional) | {processo de revisão planejado} |
+
+---
+
+## Próximos Passos
+
+Após criar `bookkit/LAUNCH.md`, verifique:
+
+**Se `bookkit/PRESS.md` não existir:**
+→ `/bookkit.press` — o press kit alimenta a coluna de PR do cronograma
+
+**Se o press kit já existir, checklist final antes de publicar:**
+- [ ] `bookkit/BLURB.md` — textos aprovados ✓
+- [ ] `bookkit/METADATA.md` — keywords e categorias configuradas no KDP *(auto)*
+- [ ] `bookkit/ADS.md` — campanhas prontas para ativar *(auto)*
+- [ ] `bookkit/QUERY.md` — submissões ativas *(tradicional)*
+- [ ] `bookkit/PRESS.md` — press kit disponível ✓
+- [ ] `bookkit/LAUNCH.md` — cronograma confirmado ✓
+
+**Dica:** Configure a pré-venda na Amazon 30-90 dias antes do lançamento —
+gera ranking de vendas mesmo antes da data oficial.
+
+> **Cursor:** use `@bookkit.launch` no Chat.

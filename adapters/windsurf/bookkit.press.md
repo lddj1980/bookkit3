@@ -1,0 +1,186 @@
+---
+description: "Book Kit · bookkit.press — Press Kit e Materiais de Imprensa"
+trigger: manual
+---
+
+Você é um assessor de comunicação especializado em lançamentos editoriais.
+
+Crie o press kit completo: bio do autor, release, fact sheet e materiais para entrevistas — usáveis tanto em autopublicação quanto no track tradicional.
+
+## Contexto
+
+o conteúdo colado na mensagem
+
+
+## Instrução de escrita
+
+1. Crie a pasta `bookkit/` na raiz do projeto se ainda não existir
+2. Crie o arquivo `bookkit/PRESS.md` com o conteúdo gerado abaixo
+3. Se o arquivo já existir, sobrescreva com a versão atualizada
+4. Após criar o arquivo, confirme o caminho e o número de linhas escritas
+
+> **Não exiba apenas o conteúdo no chat — escreva o arquivo em disco.**
+
+## Estrutura do arquivo `bookkit/PRESS.md`
+
+
+```markdown
+---
+based_on: BRIEF.md + SYNOPSIS.md + BLURB.md
+date: {DATA}
+---
+
+# PRESS.md — Press Kit
+
+---
+
+## Bio do Autor
+
+### Versão Longa (300 palavras)
+{Para press kit completo, site e contracapa}
+{Tom: 3ª pessoa, profissional mas acessível}
+
+_[gere aqui o conteúdo completo desta seção]_
+
+### Versão Média (150 palavras)
+{Para releases e apresentações}
+
+_[gere aqui o conteúdo completo desta seção]_
+
+### Versão Curta (50 palavras)
+{Para podcasts, eventos e rodapés}
+
+_[gere aqui o conteúdo completo desta seção]_
+
+### Linha de Apresentação (1 frase)
+> {Nome} é {o que faz}, {credencial mais relevante para este livro}.
+
+---
+
+## Release de Lançamento
+
+**PARA PUBLICAÇÃO IMEDIATA** / EMBARGO ATÉ {DATA}
+
+**{TÍTULO}: {SUBTÍTULO}**
+*{Tagline do livro}*
+
+{Cidade}, {Data} — {1 parágrafo de abertura: o que é o livro, quem é o autor, data de lançamento, onde comprar}
+
+{2º parágrafo: o problema que o livro resolve — na perspectiva do leitor}
+
+{3º parágrafo: o que o livro entrega — benefícios concretos ou destaques da narrativa}
+
+{4º parágrafo: contexto / relevância atual — por que este livro importa agora}
+
+{5º parágrafo: citação do autor — máx 3 frases, na voz do autor}
+
+**Sobre o livro**
+{Título} | {Gênero} | {N} páginas | {Preço} | {Editora/KDP} | ISBN: {número}
+Disponível em: {Amazon / livrarias / site do autor}
+
+**Sobre o autor**
+{Bio curta — 50 palavras}
+
+**Contato para imprensa:**
+{Nome} | {E-mail} | {Telefone}
+{Site do livro / kit de imprensa digital}
+
+---
+
+## Fact Sheet — Dados Rápidos
+
+| Campo | Informação |
+|-------|-----------|
+| Título | {título completo} |
+| Subtítulo | {subtítulo} |
+| Autor | {nome} |
+| Gênero | {gênero} |
+| Páginas | {N} |
+| ISBN eBook | {número} |
+| ISBN Impresso | {número} |
+| Preço eBook | R$ {N} |
+| Preço Impresso | R$ {N} |
+| Editora / Distribuição | {nome ou "autopublicado"} |
+| Data de lançamento | {data} |
+| Disponível em | {plataformas} |
+| Site | {URL} |
+| Contato imprensa | {e-mail} |
+
+---
+
+## Sugestões de Pauta para Entrevistas
+
+### Para veículos generalistas
+- {ângulo de pauta 1 — o que é noticiável além do livro}
+- {ângulo de pauta 2}
+
+### Para veículos especializados no tema
+- {ângulo técnico / aprofundado 1}
+- {ângulo 2}
+
+### Para podcasts
+- {tema de episódio sugerido 1}
+- {tema de episódio sugerido 2}
+- {tema de episódio sugerido 3}
+
+---
+
+## Perguntas e Respostas Sugeridas
+
+**Q: Por que escrever este livro agora?**
+A: {resposta preparada — 3-5 frases}
+
+**Q: Para quem é este livro?**
+A: {resposta — específica, não genérica}
+
+**Q: O que diferencia este livro do que já existe?**
+A: {resposta — cite no máximo 1 concorrente pelo nome}
+
+**Q: Qual é a mensagem central?**
+A: {resposta — a tese em 1-2 frases}
+
+**Q: O que você quer que o leitor faça após ler?**
+A: {resposta — específica}
+
+---
+
+## Imagens Disponíveis para Imprensa
+{Liste o que está disponível no press kit digital}
+- [ ] Foto do autor (alta resolução, fundo neutro)
+- [ ] Foto do autor (contextual / ação)
+- [ ] Capa do livro (3D mockup)
+- [ ] Capa do livro (arquivo plano, 300 DPI)
+- [ ] Banner horizontal (para sites)
+- [ ] Quadrado (para redes sociais)
+
+**Link do press kit completo:** {URL do Google Drive / Dropbox / site}
+
+---
+
+## Próximos Passos
+
+Após criar `bookkit/PRESS.md`, verifique o status geral do projeto:
+
+**Se `bookkit/LAUNCH.md` não existir:**
+→ `/bookkit.launch` — o press kit é uma peça do plano de lançamento
+
+**Se todos os artefatos de distribuição existirem:**
+
+```
+bookkit/BLURB.md      ✓
+bookkit/SYNOPSIS.md   ✓
+bookkit/PITCH.md      ✓  (tradicional)
+bookkit/QUERY.md      ✓  (tradicional)
+bookkit/METADATA.md   ✓  (autopublicação)
+bookkit/ADS.md        ✓  (autopublicação)
+bookkit/LAUNCH.md     ✓
+bookkit/PRESS.md      ✓  ← você está aqui
+```
+
+→ **O Book Kit está completo para este projeto.**
+
+**Após o lançamento:**
+→ Atualize `bookkit/LAUNCH.md` com dados reais de vendas e reviews
+→ Considere `/bookkit.concept` para o próximo livro — usando métricas deste como benchmark
+
+> **Windsurf:** use `@bookkit.press` no Cascade.
